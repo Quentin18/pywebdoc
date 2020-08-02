@@ -12,6 +12,8 @@ Presentation
 This tool works for standard libraries and PyPI packages.
 It opens web pages on your default web browser.
 
+.. image:: img/demo.gif
+
 .. toctree::
    :maxdepth: 1
    :caption: Contents:

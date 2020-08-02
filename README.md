@@ -7,6 +7,8 @@
 
 **pywebdoc** is a CLI application to quickly open web documentation about Python. This tool works for standard libraries and PyPI packages. It opens web pages on your default web browser.
 
+![Demo](https://github.com/Quentin18/pywebdoc/blob/master/docs/source/img/demo.gif)
+
 ## Installing
 *pywebdoc* can be installed using [pip](https://pip.pypa.io/en/stable/):
 ```bash
