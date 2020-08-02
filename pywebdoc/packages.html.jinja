@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PyPI installed packages</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="{{ path }}/style.css"/>
+    </head>
+    <body>
+        <h1>PyPI installed packages</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Package</th>
+                    <th>Version</th>
+                    <th>Summary</th>
+                    <th>Home-page</th>
+                    <th>License</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for p in packages %}
+                <tr>
+                    <td><a href="{{ p.url }}">{{ p.name }}</a></td>
+                    <td>{{ p.version }}</td>
+                    <td>{{ p.summary }}</td>
+                {% if p.home_page != "UNKNOWN" %}
+                    <td><a href="{{ p.home_page }}">{{ p.home_page }}</a></td>
+                {% else %}
+                    <td></td>
+                {% endif %}
+                    <td>{{ p._license }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <em>Made by <a href="https://github.com/Quentin18/pywebdoc">pywebdoc</a></em>
+    </body>
+</html>

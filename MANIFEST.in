@@ -1,0 +1,2 @@
+include pywebdoc/style.css
+include pywebdoc/packages.html.jinja
