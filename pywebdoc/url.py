@@ -15,6 +15,9 @@ def check_url(url, log=True):
     except requests.exceptions.SSLError:
         logging.error('No internet access')
         return False
+    except requests.exceptions.ConnectionError:
+        logging.error('No internet access')
+        return False
     if r.status_code != 404:
         if log:
             logging.info('URL Found: {url}'.format(url=url))
