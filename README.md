@@ -34,7 +34,7 @@ pywebdoc pypi [OPTIONS] PACKAGE
 ```bash
 pywebdoc home [OPTIONS] PACKAGE
 ```
-* **Open the documentation page of a package on [ReadTheDocs](https://readthedocs.org)**:
+* **Open the documentation page of a package on [Read the Docs](https://readthedocs.org)**:
 ```bash
 pywebdoc rtd [OPTIONS] PACKAGE
 ```
