@@ -14,9 +14,6 @@ sphinx:
 
 formats: all
 
-build:
-  image: latest
-
 python:
   install:
     - requirements: docs/requirements.txt
